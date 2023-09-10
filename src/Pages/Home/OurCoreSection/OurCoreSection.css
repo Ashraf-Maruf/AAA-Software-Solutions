@@ -1,0 +1,19 @@
+.categoryMenu a {
+    position: relative;
+}
+
+.categoryMenu a::after {
+    content: "";
+    position: absolute;
+    background-color: #1E46B7;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.categoryMenu a:hover::after {
+    width: 100%;
+}

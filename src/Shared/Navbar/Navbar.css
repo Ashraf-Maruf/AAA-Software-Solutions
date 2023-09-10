@@ -1,0 +1,62 @@
+.desktopMenu {
+    display: flex;
+    color: white;
+    gap: 40px;
+}
+
+.desktopMenu a {
+    position: relative;
+}
+
+.desktopMenu a::after {
+    content: "";
+    position: absolute;
+    background-color: #D9D9D9;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: -32px;
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.desktopMenu a:hover::after {
+    width: 100%;
+}
+
+
+.navbar1.fixed {
+    background-color: #163794;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+@media screen and (max-width:1366px) {
+    .desktopMenu a::after {
+        bottom: -26px;
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    .desktopMenu a::after {
+        bottom: -22px;
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+    .desktopMenu a::after {
+        bottom: -22px;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    .desktopMenu a::after {
+        bottom: -22px;
+    }
+
+}

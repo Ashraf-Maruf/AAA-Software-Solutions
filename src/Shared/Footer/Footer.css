@@ -1,0 +1,9 @@
+.shape::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #7E6637;
+}

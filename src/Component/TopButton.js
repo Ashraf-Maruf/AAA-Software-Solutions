@@ -25,13 +25,13 @@ const TopButton = () => {
         boxShadow: '0px 3px 8px 0px #FFFFFF',
     }
     return (
-        <>
+        <div className=' max-w-[1132px] mx-auto'>
             {
                 backToTopButton && (
-                    <button className='fixed z-30 sm1:hidden md:block bottom-[570px] right-12 bg-[#163794]  rounded-md flex items-center justify-center w-12 h-12 transition duration-700 ease-in-out  rotate-180 hover:rotate-0' onClick={scrollUP}><HiArrowSmallUp className='animate-bounce rounded-full' color='#FFFFFF' size={20} style={boxShadow} /></button>
+                    <button className='fixed  z-30 bottom-[570px] xm2:hidden lg:flex right-12 bg-[#163794]  rounded-md flex items-center justify-center w-12 h-12 transition duration-700 ease-in-out  rotate-180 hover:rotate-0' onClick={scrollUP}><HiArrowSmallUp className='animate-bounce rounded-full' color='#FFFFFF' size={20} style={boxShadow} /></button>
                 )
             }
-        </>
+        </div>
     );
 };
 

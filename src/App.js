@@ -10,7 +10,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 5000)
+    }, 3000)
   }, [])
   return (
     <div className="App flex justify-center items-center min-h-screen bg-primary">

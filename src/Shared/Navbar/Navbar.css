@@ -28,8 +28,21 @@
 .navbar1.fixed {
     background-color: #163794;
     transition: 0.5s ease-in-out;
+    animation-name: InDown;
+    animation-duration: 1s;
 }
 
+@keyframes InDown {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
 
 
 

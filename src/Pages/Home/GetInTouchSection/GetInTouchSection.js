@@ -50,27 +50,6 @@ const GetInTouchSection = () => {
                         <div className=' pt-9'>
                             <button className="bg-[#163794] border border-[#6788E2] text-white py-4 px-14 font-Arimo  font-normal text-[16px] leading-normal uppercase">Submite</button>
                         </div>
-                        {/* <div className='pb-6 flex justify-between md2:flex-col lg:flex-col md2:gap-6 lg:gap-6'>
-                            <div className=' relative'>
-                                <PhoneInput
-                                    country={'us'}
-                                    placeholder='201-123-1234'
-                                    value={value}
-                                    onChange={setValue} />
-                                <span className=' absolute right-4 top-5'><FaPhone size={20} color='#1E46B7' /> </span>
-                            </div>
-                            <div className=' relative'>
-                                <input type="text" placeholder="Your Location" className="" />
-                                <span className=' absolute right-4 top-5'><FaLocationDot size={20} color='#1E46B7' /> </span>
-                            </div>
-                        </div> */}
-                        {/* <span className=' relative'>
-                            <textarea rows={5} className=""></textarea>
-                            <span className=' absolute right-4 top-[-125px]'><FaPencil size={20} color='#1E46B7' /> </span>
-                        </span>
-                        <div className=' pt-9'>
-                            <button className="bg-[#163794] border border-[#6788E2] text-white py-4 px-14 font-Arimo  font-normal text-[16px] leading-normal uppercase">Submite</button>
-                        </div> */}
                     </div>
                     <div className='max-w-[335px] md2:mx-auto lg:mx-auto'>
                         <div className='relative xm:mt-5 xm1:mt-10 xm2:mt-12 xm3:mt-16 xm4:mt-16 sm:mt-16 sm1:mt-16 md:mt-16 md1:mt-16'>
@@ -78,20 +57,19 @@ const GetInTouchSection = () => {
                                 <div className=' xm:py-8 xm:px-4 xm1:px-5 xm1:py-10 xm2:py-10 xm2:px-8 xm3:py-8 xm3:px-6 sm:py-7 md:px-5 py-14 ps-8'>
                                     <h3 className=' xm:pb-5 xm4:pb-4 xm:text-[27px] xm:leading-[35px] xm1:pb-10 xm1:text-[27px] xm2:text-[30px] xm2:leading-[35px]  xm1:leading-[35px] pb-11 text-start text-white text-[34px] leading-[44px] font-Arimo font-bold normal-case'>Don’t hesitate to contact us</h3>
                                     <div className=' xm:pb-3 xm1:pb-2 pb-9 text-white flex items-center gap-5'>
-                                        <span className=' bg-[#5378C9] rounded-full w-[45px] h-[45px] flex justify-center items-center'>
+                                        <Link onClick={() => window.location = 'tel:+0123456789'} className=' bg-[#5378C9] rounded-full w-[45px] h-[45px] flex justify-center items-center'>
                                             <FaPhone size={20} color='#FFFFFF' />
-                                        </span>
-                                        {/* <span><FaPhone size={20} color='#FFFFFF' /></span> */}
+                                        </Link>
                                         <div className=' text-justify'>
                                             <p className=' font-Arimo font-normal leading-normal xm:text-[16px] xm1:text-[18px] md:text-[18px] text-[20px] capitalize'>Call Us</p>
-                                            <Link className=' font-Arimo font-bold xm:text-[16px] xm1:text-[17px]] xm2:text-[18px] xm3:text-[19px] xm4:text-[18px] md:text-[20px] text-[22px] leading-[40px] normal-case'>+012-345-6789</Link>
+                                            <span className=' z-20 font-Arimo font-bold xm:text-[16px] xm1:text-[17px]] xm2:text-[18px] xm3:text-[19px] xm4:text-[18px] md:text-[20px] text-[22px] leading-[40px] normal-case'>+012-345-6789</span>
                                         </div>
                                     </div>
                                     <div className=' xm:pb-3 xm1:pb-2 pb-9 text-white flex items-center gap-5'>
-                                        <span className=' bg-[#5378C9] rounded-full w-[45px] h-[45px] flex justify-center items-center'><FaEnvelope size={20} color='#FFFFFF' /></span>
+                                        <Link onClick={() => window.location = 'mailto:info@example.com'} className=' bg-[#5378C9] rounded-full w-[45px] h-[45px] flex justify-center items-center'><FaEnvelope size={20} color='#FFFFFF' /></Link>
                                         <div className=' text-justify'>
                                             <p className=' font-Arimo font-normal xm:text-[16px] xm1:text-[18px] md:text-[18px] leading-normal text-[20px] capitalize'>Write to us</p>
-                                            <Link className=' font-Arimo font-bold  xm:text-[16px]  xm1:text-[17px] xm2:text-[18px] xm3:text-[19px] xm4:text-[18px] md:text-[20px] text-[22px] leading-[40px] normal-case'>info@example.com</Link>
+                                            <span className=' font-Arimo font-bold  xm:text-[16px]  xm1:text-[17px] xm2:text-[18px] xm3:text-[19px] xm4:text-[18px] md:text-[20px] text-[22px] leading-[40px] normal-case'>info@example.com</span>
                                         </div>
                                     </div>
                                     <div className=' text-white flex items-center gap-5'>

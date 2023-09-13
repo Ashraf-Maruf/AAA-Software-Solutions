@@ -13,6 +13,7 @@ import TalkSection from './TalkSection/TalkSection';
 import TestimonialsSection from './TestimonialsSection/TestimonialsSection';
 import GetInTouchSection from './GetInTouchSection/GetInTouchSection';
 import Footer from '../../Shared/Footer/Footer';
+import TopButton from '../../Component/TopButton';
 const Home = () => {
     return (
         <div>
@@ -103,6 +104,7 @@ const Home = () => {
             <TalkSection></TalkSection>
             <TestimonialsSection></TestimonialsSection>
             <GetInTouchSection></GetInTouchSection>
+            <TopButton></TopButton>
             <div className=' -mt-20' >
                 <Footer></Footer>
             </div>

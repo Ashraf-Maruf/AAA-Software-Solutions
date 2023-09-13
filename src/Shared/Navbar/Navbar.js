@@ -34,11 +34,11 @@ const Navbar = () => {
                 xm2:max-w-sm 
                 mx-auto">
                     <div className='flex-1'>
-                        <img src={Logo} className=' xm:w-28 xm2:w-28 lg1:w-32' width={192} height={80} alt='Logo' />
+                        <Link to='/'><img src={Logo} className=' xm:w-28 xm2:w-28 lg1:w-32' width={192} height={80} alt='Logo' /></Link>
                     </div>
                     <div className=' md1:hidden'>
                         <ul className='desktopMenu flex items-center uppercase text-xl lg1:text-sm font-Arimo font-bold  '>
-                            <Link className='text-white'>Home</Link>
+                            <Link to='/' className='text-white'>Home</Link>
                             <Link className=' text-white'>About</Link>
                             <Link className=' text-white'>Cases</Link>
                             <Link className=' text-white'>IT Support</Link>
@@ -52,8 +52,8 @@ const Navbar = () => {
                             open ? <HiOutlineXMark /> : <HiBars3CenterLeft />
                         }
                     </div>
-                    <ul className={`text-xl font-Arimo   font-bold focus:outline-none text-white flex-col gap-8  bg-[#163794] justify-center xm:w-60 w-80 h-[550px] absolute rounded-t-none rounded-box ${open ? 'md1:top-[-115px] md2:top-[-115px] md:top-[-25px] lg:top-[-80px] xm:top-[-25px] top-[-25px] xm:translate-x-[-2%] translate-x-[-5%] transition duration-700 ease-in-out rotate-[-9deg] xm:rotate-[-9deg]' : 'top-[-9999px]'}`}>
-                        <li><Link className=' transition duration-700 ease-in-out rounded-tl-lg rounded-br-lg hover:text-black hover:border-2 py-4 px-12 '>Home</Link></li>
+                    <ul onClick={() => setOpen(!open)} className={`text-xl font-Arimo   font-bold focus:outline-none text-white flex-col gap-8  bg-[#163794] justify-center xm:w-60 w-80 h-[550px] absolute rounded-t-none rounded-box ${open ? 'md1:top-[-115px] md2:top-[-115px] md:top-[-25px] lg:top-[-80px] xm:top-[-25px] top-[-25px] xm:translate-x-[-2%] translate-x-[-5%] transition duration-700 ease-in-out rotate-[-9deg] xm:rotate-[-9deg]' : 'top-[-9999px]'}`}>
+                        <li><Link to='/' className=' transition duration-700 ease-in-out rounded-tl-lg rounded-br-lg hover:text-black hover:border-2 py-4 px-12 '>Home</Link></li>
                         <li><Link className='transition duration-700 ease-in-out rounded-tl-lg rounded-br-lg hover:text-black hover:border-2 py-4 px-12'>About</Link></li>
                         <li><Link className='transition duration-700 ease-in-out rounded-tl-lg rounded-br-lg hover:text-black hover:border-2 py-4 px-12'>Cases</Link></li>
                         <li><Link className='transition duration-700 ease-in-out rounded-tl-lg rounded-br-lg hover:text-black hover:border-2 py-4 px-12'>IT Support</Link></li>

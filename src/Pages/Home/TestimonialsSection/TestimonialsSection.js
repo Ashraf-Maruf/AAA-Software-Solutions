@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
             name: "-LynxCon"
         },
         {
-            id: 2,
+            id: 3,
             para: 'It was very pleasant to work with them, they surpassed by far the expectations resulting in a high quality project. I know that they have the ability to comply with any type of software, so I do not hesitate to recommend them.',
             name: "-LynxCon"
         },
